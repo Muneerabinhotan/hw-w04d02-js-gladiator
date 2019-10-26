@@ -1,14 +1,13 @@
-
 import Gladiator from './gladiator.js';
 import Arena from './arena.js';
 
 
-//1
+
 const max = new Gladiator("Maximus", "Trident");
 console.log(max.name); // "Maximus"
 console.log(max.weapon); // "Trident"
 
-//2
+
 const colosseum = new Arena("Colosseum");
 console.log(colosseum.name);
 

@@ -1,7 +1,7 @@
 export default class Arena {
     
     constructor(name) {
-    this.name = name.charAt(0).toUpperCase() + name.slice(1)
+    this.name = name.charAt(0).toUpperCase() + name.slice(1);
     this.gladiators = [];}
 
 
@@ -16,13 +16,13 @@ export default class Arena {
     fight() {
     
     if(this.gladiators[0].weapon == "Trident" && this.gladiators[1].weapon == "Spear" || this.gladiators[0].weapon == "Spear" && this.gladiators[1].weapon == "Club" || this.gladiators[0].weapon == "Club" && this.gladiators[1].weapon == "Trident"){
-        return `${this.gladiators[0].name} Won!`
+        return `${this.gladiators[0].name} Won!`;
 
     }
     else if(this.gladiators[1].weapon == "Trident" && this.gladiators[0].weapon == "Spear" || this.gladiators[1].weapon == "Spear" && this.gladiators[0].weapon == "Club" || this.gladiators[1].weapon == "Club" && this.gladiators[0].weapon == "Trident"){
-        return `${this.gladiators[1].name} Won!`
+        return `${this.gladiators[1].name} Won!`;
 
     }
     else{
-        return 'Both are eliminated'
+        return 'Both are eliminated';
     }}}
