@@ -8,37 +8,37 @@ console.log(max.name); // "Maximus"
 console.log(max.weapon); // "Trident"
 
 
-const colosseum = new Arena("Colosseum");
-console.log(colosseum.name);
+const colosseum1 = new Arena("Colosseum");
+console.log(colosseum1.name);
 
-const colosseum = new Arena("megalopolis");
-console.log(colosseum.name); // => Megalopolis
+const colosseum2 = new Arena("megalopolis");
+console.log(colosseum2.name); // => Megalopolis
 
-const colosseum = new Arena("Colosseum");
-console.log(colosseum.gladiators); // => []
+const colosseum3 = new Arena("Colosseum");
+console.log(colosseum3.gladiators); // => []
 
-const max = new Gladiator("Maximus","Trident");
-const colosseum = new Arena("Colosseum");
-colosseum.addGladiator(max);
-console.log(colosseum.gladiators); // => [Gladiator]
+const max1 = new Gladiator("Maximus","Trident");
+const colosseum4 = new Arena("Colosseum");
+colosseum4.addGladiator(max);
+console.log(colosseum4.gladiators); // => [Gladiator]
 
-const max = new Gladiator("Maximus","Trident");
+const max2 = new Gladiator("Maximus","Trident");
 const titus = new Gladiator("Titus","Sword");
 const andronicus = new Gladiator("Andronicus","Sword");
-const colosseum = new Arena("Colosseum");
+const colosseum5 = new Arena("Colosseum");
 
-colosseum.addGladiator(max);
-colosseum.addGladiator(titus);
-colosseum.addGladiator(andronicus);
+colosseum5.addGladiator(max);
+colosseum5.addGladiator(titus);
+colosseum5.addGladiator(andronicus);
 
-console.log(colosseum.gladiators.length); // => 2
+console.log(colosseum5.gladiators.length); // => 2
 
-const max = new Gladiator("Maximus","Trident");
-const titus = new Gladiator("Titus","Spear");
-const colosseum = new Arena("Colosseum");
+const max3 = new Gladiator("Maximus","Trident");
+const titus1 = new Gladiator("Titus","Spear");
+const colosseum6 = new Arena("Colosseum");
 
-colosseum.addGladiator(max);
-colosseum.addGladiator(titus);
-colosseum.fight();
+colosseum6.addGladiator(max);
+colosseum6.addGladiator(titus);
+colosseum6.fight();
 
-console.log(colosseum.gladiators); // => [max]
+console.log(colosseum6.gladiators); // => [max]
